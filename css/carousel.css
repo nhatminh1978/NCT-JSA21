@@ -80,3 +80,19 @@ body {
     margin-top: 7rem;
   }
 }
+
+.p-3 img {
+  width: 100%;
+  
+}
+.p-3 {
+  border: 1px black solid;
+}
+.p-3 button {
+  
+  
+  
+}
+.p-3 button span{
+  text-align: left;
+}

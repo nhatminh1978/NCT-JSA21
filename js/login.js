@@ -5,7 +5,7 @@ function check(){
     var userPw = document.getElementById('password');
     if(userName.value == storedName && userPw.value == storedPw){
         alert('You are logged in.');
-        window.location.href = '../html/home.html'
+        window.location.href = '../html/index.html'
         
     }else{
         alert('Error on login');
