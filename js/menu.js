@@ -38,7 +38,7 @@ function addCart(productImg,productName,productPrice){
     }
     
   }
-  var trcontent = '<tr><td style="display: flex;align-items: center;"><img style="width: 70px;" src="'+productImg+'"></td><td><span class="title">'+productName+'</span></td><td><span class="product-price" style="margin-left:5px">'+productPrice+'</span><sup>₫</sup></td><td><input style="width: 50px;outline: none;" type="number" value="1" min="1"></td><td><button class="cart-delete btn btn-danger">X</button></td></tr><br>'
+  var trcontent = '<tr><td style="display: flex;"><img style="width: 70px;margin-right:5px" src="'+productImg+'"></td><td><span class="title" style="margin-right:5px" >'+productName+'</span></td><td><span class="product-price">'+productPrice+'</span><sup style="margin-right:5px">₫</sup></td><td><input style="width: 45px;outline: none;" type="number" value="1" min="1"></td><td><button class="cart-delete btn-close" style="margin-top:3px;margin-left:5px" ></button></td></tr><br>'
   
   addtr.innerHTML = trcontent  
   var cartTable = document.querySelector("tbody")

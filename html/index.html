@@ -12,6 +12,8 @@
   <title>Home</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+  <script src="https://kit.fontawesome.com/b2d81966fd.js" crossorigin="anonymous"></script>
+
 
 
 
@@ -130,8 +132,7 @@
     </button>
     <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
       <li>
-        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
-          aria-pressed="false">
+        <button type="button" class="dropdown-item d-flex align-items-center " aria-pressed="false" onclick="darkMode()">
           <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
             <use href="#sun-fill"></use>
           </svg>
@@ -142,8 +143,7 @@
         </button>
       </li>
       <li>
-        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
-          aria-pressed="false">
+        <button type="button" class="dropdown-item d-flex align-items-center " aria-pressed="false" onclick="darkMode()">
           <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
             <use href="#moon-stars-fill"></use>
           </svg>
@@ -153,26 +153,15 @@
           </svg>
         </button>
       </li>
-      <li>
-        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
-          aria-pressed="true">
-          <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
-            <use href="#circle-half"></use>
-          </svg>
-          Auto
-          <svg class="bi ms-auto d-none" width="1em" height="1em">
-            <use href="#check2"></use>
-          </svg>
-        </button>
-      </li>
+
     </ul>
   </div>
 
 
   <header data-bs-theme="dark">
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <nav class="navbar navbar-expand-md fixed-top ">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#" style="font-family:fantasy;">BILINGUAL PIZZA</a>
+        <a class="nav-item" href="#" style="margin-left: 600px;"><i class="fa-sharp fa-solid fa-pizza-slice fa-2xl"></i></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
           aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -180,15 +169,15 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-item-text" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
+              <a class="nav-item-text" aria-current="page" href="menu.html">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="aboutus.html">About Us</a>
+              <a class="nav-item-text" aria-current="page" href="aboutus.html">About Us</a>
             </li>
-            
+
             <!-- <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
           </li>
@@ -196,10 +185,11 @@
             <a class="nav-link disabled">Disabled</a>
           </li> -->
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <!-- <form class="d-flex" role="search">
+            <input class="form-control me-2 data-search" type="search" placeholder="Search" aria-label="Search" >
             <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+
+          </form> -->
         </div>
       </div>
     </nav>
@@ -220,7 +210,7 @@
             preserveAspectRatio="xMidYMid slice" focusable="false"></img>
           <div class="container">
             <div class="carousel-caption text-start">
-              <h1 id="h1-0"></h1>
+              <h1 id="h-0"></h1>
               <p id="p-0"></p>
               <p><a class="btn btn-lg btn-primary" href="http://127.0.0.1:5500/html/register.html">Sign up today</a></p>
             </div>
@@ -231,7 +221,7 @@
             preserveAspectRatio="xMidYMid slice" focusable="false"></img>
           <div class="container">
             <div class="carousel-caption">
-              <h1 id="h1-1"></h1>
+              <h1 id="h-1"></h1>
               <p id="p-1"></p>
               <p><a class="btn btn-lg btn-primary" href="aboutus.html">Learn more</a></p>
             </div>
@@ -242,7 +232,7 @@
             preserveAspectRatio="xMidYMid slice" focusable="false"></img>
           <div class="container">
             <div class="carousel-caption text-end">
-              <h1 id="h1-2"></h1>
+              <h1 id="h-2"></h1>
               <p id="p-2"></p>
               <p><a class="btn btn-lg btn-primary" href="menu.html">Browse gallery</a></p>
             </div>
@@ -269,13 +259,13 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
-          <img class="bd-placeholder-img rounded-circle" width="240" height="140" src="https://www.tasteatlas.com/images/dishes/b05a0af72ad845f3a6abe16143d7853a.jpg"
-            role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            
+          <img id="img-3" class="bd-placeholder-img rounded-circle" width="240" height="140" role="img"
+            aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+
           </img>
-          <h2 class="fw-normal">Peperoni</h2>
-          <p>Tomato sauce, Mozzarella, Chili peppers</p>
+          <h2 id="h-3"></h2>
+          <p id="p-3"></p>
           <!-- <p><a class="btn btn-secondary" href="menu.html">View details &raquo;</a></p> -->
           <!-- Button trigger modal -->
           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -292,43 +282,60 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body" style="text-align: left;">
-                  Pepperoni pizza is an American pizza variety which includes one of the country's most beloved toppings. Pepperoni is actually a corrupted form of peperoni (one “p”), which denotes a large pepper in Italian, but nowadays it denotes a spicy salami, usually made with a mixture of beef, pork, and spices.
-<br>
-<br>
-The popularity of pepperoni pizza had only started to rise in the 1950s. Nowadays, beef pepperoni pizza is the most popular pizza variety, but there are also versions such as fish pepperoni pizza and port pepperoni pizza. The preparation varies from one state to another, but the popularity of this pizza has made it a staple across the United States, and it’s usually prepared simply with mozzarella, tomato sauce, and pepperoni.
+                  Pepperoni pizza is an American pizza variety which includes one of the country's most beloved
+                  toppings. Pepperoni is actually a corrupted form of peperoni (one “p”), which denotes a large pepper
+                  in Italian, but nowadays it denotes a spicy salami, usually made with a mixture of beef, pork, and
+                  spices.
+                  <br>
+                  <br>
+                  The popularity of pepperoni pizza had only started to rise in the 1950s. Nowadays, beef pepperoni
+                  pizza is the most popular pizza variety, but there are also versions such as fish pepperoni pizza and
+                  port pepperoni pizza. The preparation varies from one state to another, but the popularity of this
+                  pizza has made it a staple across the United States, and it’s usually prepared simply with mozzarella,
+                  tomato sauce, and pepperoni.
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    
+
                 </div>
               </div>
             </div>
           </div>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="bd-placeholder-img rounded-circle" width="240" height="140" src="https://d1sag4ddilekf6.cloudfront.net/compressed_webp/merchants/5-C32FPFTUFCEZJE/hero/ccc833e2-85f8-4256-957d-a128a10b0cc5__store_cover__2022__12__13__14__16__02.webp"
-            role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            
+          <img id="img-4" class="bd-placeholder-img rounded-circle" width="240" height="140" role="img"
+            aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+
           </img>
-          <h2 class="fw-normal">Parma</h2>
-          <p>Tomato sauce, Mozzarella, Parma ham, Arugula
-          </p>
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <h2 id="h-4"></h2>
+          <p id="p-4"></p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
             View details &raquo;
           </button>
 
           <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+          <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Parma</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                  ...
+                <div class="modal-body" style="text-align: left;">
+                  Three brothers Ty, Baris, and Ali started Pizza Parma in a Shadyside Plaza during their college years
+                  in 1998. After working for well-known pizza parlors in Pittsburgh, three brothers decide to open their
+                  own location and make their recipes the best of the best, the rest is history. Shortly after the
+                  second and third location followed. Now serving Pittsburgh for 15+ years in Shadyside, Downtown and
+                  Upper St. Clair.
+                  <br>
+                  <br>
+                  Pizza Parma stores are Located in Downtown Pittsburgh, Shadyside, and Upper Saint Clair. We are
+                  proudly serving lunch and dinner, seven days a week. For your convenience we offer dine in, take out
+                  and delivery. Come in to one of our Pittsburgh area locations and let us serve you with the high
+                  quality food on our mouth watering menu. We only use quality Italian cheeses, local grown vegetables
+                  and fresh meats as our ingredient. a
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -339,19 +346,19 @@ The popularity of pepperoni pizza had only started to rise in the 1950s. Nowaday
           </div>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="bd-placeholder-img rounded-circle" width="240" height="140" src="https://c-pi.niceshops.com/upload/image/product/large/default/bake-affair-pizza-dough-with-italian-spices-710-g-705872-en.jpg"
-            role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            
+          <img id="img-5" class="bd-placeholder-img rounded-circle" width="240" height="140" role="img"
+            aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+
           </img>
-          <h2 class="fw-normal">Piccantino</h2>
-          <p>Tomato sauce, Mozzarella, Salame piccantino</p>
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <h2 id="h-5"></h2>
+          <p id="p-5"></p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
             View details &raquo;
           </button>
 
           <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+          <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
               <div class="modal-content">
@@ -359,8 +366,17 @@ The popularity of pepperoni pizza had only started to rise in the 1950s. Nowaday
                   <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                  ...
+                <div class="modal-body" style="text-align: left;">
+                  Originating from Italy, this Piccantino pizza is a very tasty pizza worth trying at home.
+                  <br>
+                  <br>
+
+                  Baked well, the below pizza gives an enticing taste, matched with a extensive smell to delight you.
+                  <br>
+                  <br>
+
+                  Use your time to get the best toppings and add them to a fantastic crust for your family to take part
+                  in a out of this world pizza meal.
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -438,7 +454,8 @@ The popularity of pepperoni pizza had only started to rise in the 1950s. Nowaday
 
     <!-- FOOTER -->
     <footer class="container">
-      <p class="float-end"><a href="#" style="text-decoration: none;">Back to top</a></p>
+      <p class="float-end"><a href="#" style="text-decoration: none;"><i
+            class="fa-solid fa-arrow-up fa-beat fa-2xl"></i></a></p>
 
       <p>&copy; 2017–2023 Company, Inc. All rights reserved.</p>
     </footer>
@@ -448,6 +465,7 @@ The popularity of pepperoni pizza had only started to rise in the 1950s. Nowaday
   <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../js/api.js"></script>
   <script src="../js/register.js"></script>
+  <script src="../js/theme-toggle.js"></script>
 
 
 </body>
